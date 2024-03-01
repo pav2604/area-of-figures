@@ -1,0 +1,21 @@
+from math import pi
+figures = input()
+
+area = ''
+
+if figures == "square":
+    a = float(input())
+    area = a * a
+elif figures == 'rectangle':
+    a = float(input())
+    b = float(input())
+    area = a * b
+elif figures == "circle":
+    r = float(input())
+    area = r ** 2 * pi
+elif figures == "triangle":
+    a = float(input())
+    h = float(input())
+    area = a * h / 2
+
+print(f"{area:.3f}")
